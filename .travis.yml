@@ -1,5 +1,9 @@
 language: cpp
 
+install:
+  - sudo apt-get install -qq cppcheck
+
 script:
-- make
-- ./TestApp
+  - make
+  - ./TestApp
+  - cppcheck -quiet --error-exitcode=1
