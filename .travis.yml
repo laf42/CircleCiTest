@@ -6,4 +6,5 @@ install:
 script:
   - make
   - ./TestApp
+  - ls -al
   - cppcheck --error-exitcode=1
