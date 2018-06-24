@@ -7,4 +7,4 @@ script:
   - make
   - ./TestApp
   - ls -al
-  - cppcheck --error-exitcode=1
+  - cppcheck -v --error-exitcode=1
