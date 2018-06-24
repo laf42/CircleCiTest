@@ -1,10 +1,7 @@
 language: cpp
 
 install:
-  - sudo apt-get install -qq cppcheck
 
 script:
   - make
   - ./TestApp
-  - ls -al
-  - cppcheck -v --error-exitcode=1
